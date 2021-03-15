@@ -1,0 +1,22 @@
+{
+  "name": "test_framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "countEvenNumber.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntMousinho/first_test_framework.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AntMousinho/first_test_framework/issues"
+  },
+  "homepage": "https://github.com/AntMousinho/first_test_framework#readme",
+  "devDependencies": {
+    "jasmine": "^3.6.4"
+  }
+}

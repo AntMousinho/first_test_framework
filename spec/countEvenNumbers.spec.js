@@ -13,7 +13,7 @@ actualOutput = countEvenNumber(input);
 
 // Verify
 result = assertEquals(actualOutput, expectedOutput);
-console.log(`Test ${input}. Result: ${result}`);
+console.log(`Result = ${result}`);
 
 
 // Test 2
@@ -27,7 +27,7 @@ actualOutput = countEvenNumber(input);
 
 // Verify
 result = assertEquals(actualOutput, expectedOutput);
-console.log(`Test ${input}. Result: ${result}`);
+console.log(`Result = ${result}`);
 
 
 // Test 3
@@ -41,4 +41,4 @@ actualOutput = countEvenNumber(input);
 
 // Verify
 result = assertEquals(actualOutput, expectedOutput);
-console.log(`Test ${input}. Result: ${result}`);
+console.log(`Result = ${result}`);
