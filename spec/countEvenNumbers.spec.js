@@ -1,44 +1,18 @@
 const assertEquals = require('./../test-framework');
-const countEvenNumber = require('./../countEvenNumber');
-
-let input, expectedOutput, actualOutput, result;
-// Test 1
-// Setup
-input = [1, 2, 3, 4, 5, 6];
-expectedOutput = 3;
-console.log(`Testing ${input} gives output ${expectedOutput}`);
-
-// Execute
-actualOutput = countEvenNumber(input);
-
-// Verify
-result = assertEquals(actualOutput, expectedOutput);
-console.log(`Result = ${result}`);
+const countEvenNumber = require('./../src/countEvenNumber');
 
 
-// Test 2
-// Setup
-input = [0, 1, 2];
-expectedOutput = 2;
-console.log(`Testing ${input} gives output ${expectedOutput}`);
 
-// Execute
-actualOutput = countEvenNumber(input);
+describe('Even number count from', function() {
+    it('[1, 2, 3, 4, 5, 6] should be 3', function() {
+        expect(countEvenNumber([1, 2, 3, 4, 5, 6])).toEqual(3);
+    })
 
-// Verify
-result = assertEquals(actualOutput, expectedOutput);
-console.log(`Result = ${result}`);
+    it('[0, 1, 2] should be 2', function() {
+        expect(countEvenNumber([0, 1, 2])).toEqual(2);
+    })
 
-
-// Test 3
-// Setup
-input = [1, 3, 5];
-expectedOutput = 0;
-console.log(`Testing ${input} gives output ${expectedOutput}`);
-
-// Execute
-actualOutput = countEvenNumber(input);
-
-// Verify
-result = assertEquals(actualOutput, expectedOutput);
-console.log(`Result = ${result}`);
+    it('[1, 3, 5] should be 0', function() {
+        expect(countEvenNumber([1, 3, 5])).toEqual(0);
+    })
+})

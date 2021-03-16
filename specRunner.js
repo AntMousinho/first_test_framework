@@ -1,1 +1,1 @@
-const specFiles = require('./spec/countEvenNumbers.spec');
+// const specFiles = require('./spec/countEvenNumbers.spec');
